@@ -37,10 +37,10 @@ exports[`renders a snapshot 1`] = `
         Welcome to the Game of School
       </h2>
       <p>
-        You are the prime jokester at your school, but your glory days may be over. Unless you can gather all evidence of your pranks and dispose of it quickly, the principal will suspend you for good.
+        You are the prime jokester at your school but your glory days may be over. Unless you can gather all evidence of your pranks and dispose of it quickly, the principal will suspend you for good Visit all the rooms in the school and gather all ten items. Then return to the West Hall to win.
       </p>
       <p>
-        Search the rooms of your school for incriminating evidence. Pick up all of the items to win the game. If the principal catches you, use your wits to get free, or else you lose!
+        Search the rooms of your school for incriminating evidence. Pick up all of the items to win the game. If the principal catches you use your wits to get free or else you lose! However, if you've collected a hall pass and the principal meets you in the East or West Hall he can't catch you
       </p>
       <button
         onClick={[Function]}
