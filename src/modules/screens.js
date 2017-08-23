@@ -5,10 +5,10 @@ export function Start({onStart}) {
     <div className="startWrapper" style={{ width: '100%', height: '100%', zIndex: '100', backgroundColor: 'white'}}>
       <h2>Welcome to the Game of School</h2>
       <p>
-				You are the prime jokester at your school, but your glory days may be over. Unless you can gather all evidence of your pranks and dispose of it quickly, the principal will suspend you for good.
+				You are the prime jokester at your school but your glory days may be over. Unless you can gather all evidence of your pranks and dispose of it quickly, the principal will suspend you for good Visit all the rooms in the school and gather all ten items. Then return to the West Hall to win.
       </p>
       <p>
-				Search the rooms of your school for incriminating evidence. Pick up all of the items to win the game. If the principal catches you, use your wits to get free, or else you lose!
+				Search the rooms of your school for incriminating evidence. Pick up all of the items to win the game. If the principal catches you use your wits to get free or else you lose! However, if you've collected a hall pass and the principal meets you in the East or West Hall he can't catch you
       </p>
       <button onClick={() => onStart()}>Play the Game!</button>
       <br/>
@@ -26,7 +26,7 @@ export function Win({onWin}) {
       </p>
       <button onClick={() => onWin()}>Restart the Game</button>
       <p>
-        Credits: Wendy Beck, Christopher Thomson, Stephanie Fitzgerald
+        Credits: Wendy Beck, Stephanie Fitzgerald, Christopher Thomson
       </p>
     </div>
   );
@@ -41,7 +41,7 @@ export function Lose({onLose}) {
       </p>
       <button onClick={() => onLose()}>Restart the Game</button>
       <p>
-        Credits: Wendy Beck, Christopher Thomson, Stephanie Fitzgerald
+        Credits: Wendy Beck, Stephanie Fitzgerald, Christopher Thomson
       </p>
     </div>
   );

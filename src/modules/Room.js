@@ -1,4 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
+Room.propTypes = {
+  room: PropTypes.object,
+  onExit: PropTypes.func
+}
 
 export default function Room({ room, onExit, onPickup }) {
   return (
