@@ -7,10 +7,8 @@ import move from './modules/principal';
 import {Start, Win, Lose} from './modules/screens';
 import challenges from './modules/challenges';
 import Challenge from './modules/Challenge';
-
 import './App.css';
 
-// TODO adjacent room warning
 
 class App extends Component {
   constructor(props) {
@@ -18,7 +16,6 @@ class App extends Component {
 
     this.state = {
       screen: 'startScreen',
-      // win: null,
       rooms: rooms,
       playerRoom: rooms[0],
       princRoom: rooms[1],
@@ -55,13 +52,9 @@ class App extends Component {
       // this.handleRoomRelations(playerRoom)
     }
     else if(playerRoom ===  princRoom) {
-      console.log('handling: ',playerRoom, princRoom);
-      console.log('testing hall pass: ', player.inventory, 'pr: ',playerRoom.key);
       if(player.inventory.includes('hall pass') && (playerRoom.key === 'westHall' || playerRoom.key === 'eastHall')) {
-        console.log('hall pass = safe!');
         this.setState({princRoom: rooms[1], playerRoom: playerDest});
       } else {
-        console.log('time for a challenge!');
         this.setState({playerRoom: playerDest})
          let index = Math.trunc(Math.random() * 10);
         this.setState({ visible: true });
@@ -76,7 +69,6 @@ class App extends Component {
     }
     if(player.inventory.length >= 9
         && (playerDest.key === 'westHall' || playerDest.key === 'playground')) {
-      console.log('Congratulations!');
       this.setState({ screen: 'winScreen' });
     }
   }
